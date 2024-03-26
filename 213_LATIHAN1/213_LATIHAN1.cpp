@@ -48,7 +48,14 @@ int main()
 		cout << "5.keluar" << endl;
 		cout << "====================" << endl;
 		cin >> pilihan;
+		
+	switch (pilihan)
+	{
+	case 1:
+		inputdata();
+		cout << "hasil penjumlahan = " << penjumlahan(bilangan1, bilangan2) << endl;
+		break;
 
-
+		}
 	}
 }
