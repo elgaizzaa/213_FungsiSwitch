@@ -48,28 +48,34 @@ int main()
 		cout << "5.keluar" << endl;
 		cout << "====================" << endl;
 		cin >> pilihan;
-		
-	switch (pilihan)
-	{
-	case 1:
-		inputdata();
-		cout << "hasil penjumlahan = " << penjumlahan(bilangan1, bilangan2) << endl;
-		break;
-	case 2:
-		inputdata();
-		cout << "hasil pengurangan = " << pengurangan(bilangan1, bilangan2) << endl;
-		break;
-	case 3:
-		inputdata();
-		cout << "hasil perkalian = " << perkalian(bilangan1, bilangan2) << endl;
-		break;
-	case 4:
-		inputdata();
-		cout << "hasil pembagian = " << pembagian(bilangan1, bilangan2) << endl;
-		break;
-	case 5:
-		break;
-	
-	}
-}
+
+		switch (pilihan)
+		{
+		case 1:
+			inputdata();
+			cout << "hasil penjumlahan = " << penjumlahan(bilangan1, bilangan2) << endl;
+			break;
+		case 2:
+			inputdata();
+			cout << "hasil pengurangan = " << pengurangan(bilangan1, bilangan2) << endl;
+			break;
+		case 3:
+			inputdata();
+			cout << "hasil perkalian = " << perkalian(bilangan1, bilangan2) << endl;
+			break;
+		case 4:
+			inputdata();
+			cout << "hasil pembagian = " << pembagian(bilangan1, bilangan2) << endl;
+			break;
+		case 5:
+			break;
+		default:
+			cout << "pilihan tidak ada " << endl;
+			break;
+		}
+		system("pause");
+		system("CLS");
+
+	} while (pilihan != 5);
+
 }
